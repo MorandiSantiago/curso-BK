@@ -70,7 +70,7 @@ echo "<br>";
 //Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor a 1 y menor a 10. 
 //Si el número es mayor a 1 y menor a 10, imprimir un mensaje diciendo "El número ingresado es mayor a 1 y menor a 10". En caso contrario, no mostrar nada.
 $n = 5;
-if($n > 1 && $n < 10){
+if($n > 1 && $n < 10){  // && es el AND
     echo "El numero ingresado es mayor a 1 y menor a 10";
 }
 echo "<br>";
@@ -90,7 +90,7 @@ echo "<br>";
 $numero1 = 5;
 $numero2 = 4;
 if($numero1 > $numero2){
-    echo "La suma es: ".($numero1+$numero2)."<br>";             //uso parentesis para que primero haga la suma y luego la concatenacion
+    echo "La suma es: ".($numero1+$numero2)."<br>";             //uso parentesis para que primero haga la suma y despues la concatenacion
     echo "La resta es: ".($numero1-$numero2)."<br>";
 }elseif($numero2 > $numero1){                                   //elseif es para poner otra condicion   
     echo "La multiplicacion es: ".($numero1*$numero2)."<br>"; 
