@@ -3,6 +3,7 @@
     echo "<b>hola Argentina </b>";
     //o tambien se puede hacer asi 
     echo "<br>";
+    //tambien puedo concatenar se hace poniendo un .
 
     //para hacer salto de linea se usa "<br>"
     //ejemplo: echo "hola mundo <br>";
