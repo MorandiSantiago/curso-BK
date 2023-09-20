@@ -65,6 +65,7 @@ $n = 5;
 if($n > 0){
     echo "El numero ingresado es un numero positivo";
 }
+echo "<br>";
 
 //Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor a 1 y menor a 10. 
 //Si el número es mayor a 1 y menor a 10, imprimir un mensaje diciendo "El número ingresado es mayor a 1 y menor a 10". En caso contrario, no mostrar nada.
@@ -72,6 +73,7 @@ $n = 5;
 if($n > 1 && $n < 10){
     echo "El numero ingresado es mayor a 1 y menor a 10";
 }
+echo "<br>";
 
 //Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor o igual a 10 o menor a 2. 
 //Si el número es mayor o igual a 10 o menor a 2, imprimir un mensaje diciendo "El número ingresado es mayor o igual a 10 o menor a 2". 
@@ -82,7 +84,7 @@ if($n >= 10 || $n < 2){  // || es el OR
 }else{
     echo "El numero ingresado no pudo ser validado";
 }
-
+echo "<br>";
 //Crear dos variables, una con el nombre numero1 y otra con el nombre numero2, yasignarles dos valores numéricos. Si numero1 es mayor a numero2, imprimir la suma y la resta. 
 //Si numero2 es mayor a numero1, mostrar por pantalla la multiplicación, la división entera y el resto. Si numero1 y numero2 son iguales, imprimir el mensaje "Los números ingresados son iguales".
 $numero1 = 5;
@@ -97,5 +99,5 @@ if($numero1 > $numero2){
 }else{                                                          // se entiendo que la condicion es que son iguales
     echo "Los numeros ingresados son iguales";
 }
-
+echo "<br>";
 ?>
