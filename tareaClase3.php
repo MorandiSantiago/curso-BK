@@ -60,6 +60,10 @@ $altura = 12;
 $perimetro = ($base * 2) + ($altura * 2);
 echo $perimetro;
 echo "<br>";
+//el area
+$area = $base * $altura;
+echo $area;
+echo "<br>";
 
 //ejercicio 5´
 //Calcular e imprimir el perímetro y el área de un círculo dado que su radio es de 30cm.
@@ -68,3 +72,8 @@ $radio = 30;
 $perimetroCirculo = 2 * pi() * $radio; //pi() es una funcion de php
 echo $perimetroCirculo;
 echo "<br>";
+//el area
+$areaCirculo = pi() * ($radio * $radio);
+echo $areaCirculo;
+echo "<br>";
+?>
