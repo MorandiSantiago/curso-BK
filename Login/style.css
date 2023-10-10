@@ -107,7 +107,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform .5s ease, height 0.5s ease;
+    transition: transform .3s ease, height 0.5s ease;
     transform: scale(0);
     
 }
@@ -130,11 +130,12 @@ header {
 }
 .wrapper .form-box.register{
     position: absolute;
-    transform: translateX(400px);
+    transform: translateY(500px);
 }
 
 .wrapper.active .form-box.login{
-    transform: translateX(-400px);
+    
+    transform: translateY(-500px);
     transition: none;
 }
 .wrapper.active .form-box.register{
