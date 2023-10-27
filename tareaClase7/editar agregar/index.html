@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Editar Producto</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <button id="editar-button">Editar</button>
+    <button id="agregar-button">Agregar</button>
+
+    <div id="editar-producto" style="display:none">
+        <h1>Editar Producto</h1>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="precio">Precio:</label>
+            <input type="text" id="precio" name="precio" required>
+
+            <div class="button-container"> 
+                <button type="submit">Guardar</button>
+                <button type="button" class="cancelar" id="cancelar-editar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="agregar-producto" style="display:none">
+        <h1>Agregar Producto</h1>
+        <form>
+            <label for="nombre2">Nombre:</label>
+            <input type="text" id="nombre2" name="nombre2" required>
+
+            <label for="descripcion2">Descripción:</label>
+            <textarea id="descripcion2" name="descripcion2" required></textarea>
+
+            <label for="precio2">Precio:</label>
+            <input type="text" id="precio2" name="precio2" required>
+
+            <div class="button-container"> 
+                <button type="submit">Agregar</button>
+                <button type="button" class="cancelar" id="cancelar-agregar">Cancelar</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
