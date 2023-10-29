@@ -1,0 +1,75 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #000;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 25px;
+    text-align: center;
+    width: 22%; 
+}
+
+th {
+    background-color: #005500;
+    color: #fff;
+}
+
+td {
+    background-color: #f2f2f2;
+    position: relative;
+    transition: background-color 0.3s ease-in;
+}
+
+
+
+
+img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+input[type="number"] {
+    width: 40px;
+}
+
+tr:hover {
+    background-color: #eee; 
+}
+
+
+
+button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in; 
+}
+
+button:hover {
+    background-color: #333; 
+}
+.quantity-button {
+    background-color: #005500;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.quantity {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    min-width: 30px;
+    text-align: center;
+}
+
+.total {
+    text-align: right;
+    margin-top: 20px;
+    padding-right:45px !important;
+}
