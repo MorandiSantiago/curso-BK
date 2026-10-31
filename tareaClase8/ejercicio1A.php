@@ -1,10 +1,8 @@
 <?php
-#Generar una función que le ingrese por parámetro el valor del lado de un
-#cuadrado y calcular su perímetro y su superficie (Mostrar los resultados por la pantalla).
-
-function calcular($lado){
-    $perimetro = $lado * 4;
-    $superficie = $lado * $lado;
-    echo "El perimetro es: $perimetro <br>";
-    echo "La superficie es: $superficie <br>";
+function calcular($lado) {
+    if (!is_numeric($lado) || $lado <= 0) throw new InvalidArgumentException('El lado debe ser positivo.');
+    echo "El perímetro es: " . ($lado * 4) . "<br>";
+    echo "La superficie es: " . ($lado * $lado) . "<br>";
 }
+echo "<h1>Cuadrado de lado 5</h1>";
+calcular(5);

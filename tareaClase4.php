@@ -37,7 +37,7 @@ echo "<br>";
 //OPERACIONES COMBINADAS
 $a = true;
 $b = false;
-$resultado4 = $a && $b || $a; // $resultado sera true. PORQUE PRIMERO SE HACE LA AND Y LUEGO LA OR, 
+$resultado4 = $a && $b || $a; // $resultado sera true. PORQUE PRIMERO SE HACE LA AND Y LUEGO LA OR,
                              //se hace de izquierda a derecha a menos que ponga parentesis
 var_dump($resultado4);
 
@@ -67,7 +67,7 @@ if($n > 0){
 }
 echo "<br>";
 
-//Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor a 1 y menor a 10. 
+//Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor a 1 y menor a 10.
 //Si el número es mayor a 1 y menor a 10, imprimir un mensaje diciendo "El número ingresado es mayor a 1 y menor a 10". En caso contrario, no mostrar nada.
 $n = 5;
 if($n > 1 && $n < 10){  // && es el AND
@@ -75,8 +75,8 @@ if($n > 1 && $n < 10){  // && es el AND
 }
 echo "<br>";
 
-//Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor o igual a 10 o menor a 2. 
-//Si el número es mayor o igual a 10 o menor a 2, imprimir un mensaje diciendo "El número ingresado es mayor o igual a 10 o menor a 2". 
+//Crear una variable llamada n, asignarle un valor numérico y validar si es un número mayor o igual a 10 o menor a 2.
+//Si el número es mayor o igual a 10 o menor a 2, imprimir un mensaje diciendo "El número ingresado es mayor o igual a 10 o menor a 2".
 //En caso contrario, mostrar un mensaje diciendo que "El número ingresado no pudo ser validado".
 $n = 5;
 if($n >= 10 || $n < 2){  // || es el OR
@@ -85,16 +85,16 @@ if($n >= 10 || $n < 2){  // || es el OR
     echo "El numero ingresado no pudo ser validado";
 }
 echo "<br>";
-//Crear dos variables, una con el nombre numero1 y otra con el nombre numero2, yasignarles dos valores numéricos. Si numero1 es mayor a numero2, imprimir la suma y la resta. 
+//Crear dos variables, una con el nombre numero1 y otra con el nombre numero2, yasignarles dos valores numéricos. Si numero1 es mayor a numero2, imprimir la suma y la resta.
 //Si numero2 es mayor a numero1, mostrar por pantalla la multiplicación, la división entera y el resto. Si numero1 y numero2 son iguales, imprimir el mensaje "Los números ingresados son iguales".
 $numero1 = 5;
 $numero2 = 4;
 if($numero1 > $numero2){
     echo "La suma es: ".($numero1+$numero2)."<br>";             //uso parentesis para que primero haga la suma y despues la concatenacion
     echo "La resta es: ".($numero1-$numero2)."<br>";
-}elseif($numero2 > $numero1){                                   //elseif es para poner otra condicion   
-    echo "La multiplicacion es: ".($numero1*$numero2)."<br>"; 
-    echo "La division entera es: ".($numero1/$numero2)."<br>";
+}elseif($numero2 > $numero1){                                   //elseif es para poner otra condicion
+    echo "La multiplicacion es: ".($numero1*$numero2)."<br>";
+    echo "La division entera es: ".intdiv($numero1, $numero2)."<br>";
     echo "El resto es: ".($numero1%$numero2)."<br>";
 }else{                                                          // se entiendo que la condicion es que son iguales
     echo "Los numeros ingresados son iguales";

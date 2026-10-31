@@ -1,15 +1,12 @@
 <?php
-#Crear un array asociativo e introducir los siguientes valores:
-#Nombre: Pedro
-#Apellido: Torres
-#Dirección: Av. Mayo 3703
-#Teléfono: 1122334455
-
+// Datos deliberadamente ficticios para practicar arrays asociativos.
 $datos = [
-    "Nombre" => "Pedro",
-    "Apellido" => "Torres",
-    "Dirección" => "Av. Mayo 3703",
-    "Teléfono" => "1122334455"
+    "Nombre" => "Persona de ejemplo",
+    "Apellido" => "Apellido ficticio",
+    "Dirección" => "Calle de ejemplo 123",
+    "Teléfono" => "0000000000"
 ];
-    #para poder ver el array 
-echo "Nombre: " . $informacion["Nombre"] . "<br>";
+foreach ($datos as $campo => $valor) {
+    echo htmlspecialchars($campo, ENT_QUOTES, 'UTF-8') . ": " .
+        htmlspecialchars($valor, ENT_QUOTES, 'UTF-8') . "<br>";
+}

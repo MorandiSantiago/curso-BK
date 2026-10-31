@@ -1,0 +1,8 @@
+body { font: 1rem/1.6 system-ui, sans-serif; color: #172033; background: #f3f5f8; margin: 0; }
+main { max-width: 900px; margin: 2rem auto; padding: 1.5rem; background: white; border-radius: .5rem; }
+a { color: #124a91; }
+label { display: block; margin: 1rem 0; }
+input, button { font: inherit; padding: .6rem; }
+input { display: block; max-width: 100%; }
+button { cursor: pointer; }
+li { margin: .5rem 0; }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 * {
     margin: 0;
@@ -13,7 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url(background2.jpg) no-repeat;
+    background: linear-gradient(125deg, #12354c, #517087);
     background-size: cover;
     background-position: center;
 
@@ -109,7 +109,7 @@ header {
     align-items: center;
     transition: transform .3s ease, height 0.5s ease;
     transform: scale(0);
-    
+
 }
 
 .wrapper.active-popup {
@@ -134,15 +134,15 @@ header {
 }
 
 .wrapper.active .form-box.login{
-    
+
     transform: translateY(-500px);
     transition: none;
 }
 .wrapper.active .form-box.register{
     transition: transform 0.5s ease;
     transform: translateX(0);
-    
-    
+
+
 
 }
 
@@ -270,3 +270,5 @@ header {
     cursor: pointer;
     z-index: 1;
 }
+
+#resultado-demo{position:fixed;bottom:0;left:0;width:100%;padding:1rem;background:#fff;color:#173349;text-align:center}.icon-close{border:0;color:white;cursor:pointer;font:2rem system-ui}@media(max-width:600px){header{padding:15px}.logo{font-size:1.2rem}.wrapper{width:95vw}#resultado-demo{font-size:12px;padding:.5rem}}
